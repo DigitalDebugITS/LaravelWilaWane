@@ -149,7 +149,7 @@
           <li><a class="nav-link scrollto" href="index.html#products">Products</a></li>
           <li><a class="nav-link scrollto" href="index.html#faq">Faq</a></li>
           <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="{{ url('resources') }}">Resources</a></li>
+          <a href="{{ route('resources.index') }}" class="nav-link">Resources</a>
           <li><a class="nav-link" href="{{ url('blog') }}">Blog</a></li>
           <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
           <li><a class="nav-link " href="https://wa.me/c/260975520847">Shop</a></li>
