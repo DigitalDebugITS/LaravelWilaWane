@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE php>
+<php lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -139,19 +139,19 @@
   <!--======= Header ======= -->
   <header id="header" class="header fixed-top" data-scrollto-offset="0">
     <div class="container-fluid d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+      <a href="index.php" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
         <img src="{{ asset('assets/img/apple-touch-icon.png') }}" alt="Logo">
       </a>
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto" href="#">Home</a></li>
-          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-          <li><a class="nav-link scrollto" href="index.html#products">Products</a></li>
-          <li><a class="nav-link scrollto" href="index.html#faq">Faq</a></li>
-          <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="index.php#about">About</a></li>
+          <li><a class="nav-link scrollto" href="index.php#products">Products</a></li>
+          <li><a class="nav-link scrollto" href="index.php#faq">Faq</a></li>
+          <li><a class="nav-link scrollto" href="index.php#team">Team</a></li>
           <a href="{{ route('resources.index') }}" class="nav-link">Resources</a>
           <li><a class="nav-link" href="{{ url('blog') }}">Blog</a></li>
-          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="index.php#contact">Contact</a></li>
           <li><a class="nav-link " href="https://wa.me/c/260975520847">Shop</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle d-none"></i>
@@ -805,7 +805,7 @@
 
 </body>
 
-</html>
+</php>
 
 
 <script>
@@ -813,9 +813,9 @@
     // Handle card click event
     $('.nav-link').click(function() {
       // Retrieve the content for the clicked tab
-      var content = $(this).parent().find('.tab-pane').html();
+      var content = $(this).parent().find('.tab-pane').php();
       // Display the content in the card-details section
-      $('.card-details').html(content);
+      $('.card-details').php(content);
     });
   });
 
