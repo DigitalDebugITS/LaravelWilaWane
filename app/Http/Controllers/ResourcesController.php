@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Resource;
+use Illuminate\Support\Facades\log;
 
 class ResourcesController extends Controller
 {
@@ -29,6 +30,6 @@ class ResourcesController extends Controller
 
         $categories = Resource::distinct('category')->pluck('category');
 
-        return view('resources', compact('resources', 'totalPages', 'page', 'selectedCategory', 'categories'));
+        return view('resources.index', compact('resources', 'totalPages', 'page', 'selectedCategory', 'categories'));
     }
 }

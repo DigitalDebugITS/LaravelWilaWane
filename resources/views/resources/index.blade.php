@@ -255,7 +255,7 @@
         <div id="resources" class="resources-section">
             @foreach ($resources as $resource)
                 <div class="resource-item">
-                    <img src="{{ asset('admin/product_images/' . $resource->image) }}" alt="{{ $resource->title }}">
+                    <img src="{{ asset('assets/img/' . $resource->image) }}" alt="{{ $resource->title }}">
                     <h3>{{ $resource->title }}</h3>
                     <p class="price">{{ $resource->price }}</p>
                     <p class="description" id="desc-{{ $resource->id }}">{{ $resource->description }}</p>
@@ -274,25 +274,8 @@
         </div>
     </main>
     <!-- Footer -->
-    <footer id="footer" class="footer">
-        <div class="footer-legal text-center">
-            <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
-                <div class="d-flex flex-column align-items-center align-items-lg-start">
-                    <div class="copyright">
-                        &copy; Copyright <strong><span>WilaWane</span></strong>. All Rights Reserved
-                    </div>
-                    <div class="credits">
-                        Designed & Developed with <i id="heart-icon" class="bi bi-heart-fill"></i> by <a href="#">Digital Debug IT Solutions</a>
-                    </div>
-                </div>
-                <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
-                    <a href="https://m.facebook.com/pages/Wila-Wane-Store/106955238955872/?locale=hi_IN" class="facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="https://www.instagram.com/wilawane_store" class="instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F260975520847&e=AT29F0ZTN12zGL0_5jvEVaggF0EcbLbAbmH3NIbXHDlJXls5Xu9Hom-MJGSgM7ee-PH45Rshp_wnabKY3nhO9jTgZkZQT5abRtlxGw" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+     @include('partials.footer')
+   <!--  -->
     <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     <div id="preloader"></div>
     <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
